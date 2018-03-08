@@ -1,0 +1,149 @@
+body {
+    height: 150vh;
+    width: 1000w;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    background: #8bc34a;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    background: #689f38;
+    padding: 0 70px;
+    box-shadow: 0 1px 6px 1px #000;
+    height: 55px;
+    color: #fff;
+    z-index: 1;
+}
+
+#header > h2 {
+    margin: 0;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 2.3em;
+}
+
+#header > a {
+    text-align: center;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+
+#header > a:hover {
+    background: #fff;
+    color: #689f38;
+}
+
+#jumbotron {
+    margin-top: 55px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0 1px 6px 1px #404040;
+    background: #f0f0f0;
+    padding: 40px 150px;
+    color: #303030;
+}
+
+#jumbotron h2 {
+    font-size: 2.2em;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0;
+}
+
+#jumbotron hr {
+    border: 0;
+    border-top: 2px solid #e0e0e0;
+}
+
+#jumbotron p {
+    font-size: 1.4em;
+    font-family: 'Roboto', sans-serif;
+}
+
+#projectsContainer {
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 35px;
+}
+
+.container {
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 1px 1px 6px 1px #101010;
+    border: 2px solid #f0f0f0;
+    border-bottom: none;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    filter: grayscale(100%);
+}
+
+.container:hover {
+    filter: grayscale(0);
+}
+
+#thumbOne {
+    background: url("../images/project1.jpg");
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+#thumbTwo {
+    background: url("../images/project2.png");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#thumbThree {
+    background: url("../images/project3.png");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.thumbText {
+    text-decoration: none;
+    position: absolute;
+    color: #fff;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 3.5em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.projectDescription {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 10px;
+    padding-top: 20px;
+    background: #fff;
+    box-shadow: 1px 1px 4px 1px #101010;
+}
+
+.projectDescription > ul {
+    padding-left: 25px;
+    margin: 0;
+}
+
+.projectDescription > ul > li {
+    margin-bottom: 15px;
+}
